@@ -40,3 +40,11 @@ def test_add2():
     assert Calculator2.add(0, 2.0) == 2.0
     assert Calculator2.add(2.0, 0) == 2.0
     assert Calculator2.add(-4, 2.0) == -2.0
+
+def test_subtract2():
+    assert Calculator2.subtract(1, 2) == -1.0
+    assert Calculator2.subtract(2, 1) == 1.0
+    assert Calculator2.subtract(1.0, 2.0) == -1.0
+    assert Calculator2.subtract(0, 2.0) == -2.0
+    assert Calculator2.subtract(2.0, 0.0) == 2.0
+    assert Calculator2.subtract(-4, 2.0) == -6.0
