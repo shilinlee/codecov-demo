@@ -1,5 +1,6 @@
 *.py[oc]
 __pycache__
+.fleet
 .coverage
 .pytest_cache/
 coverage.xml

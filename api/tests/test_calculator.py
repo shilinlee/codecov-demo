@@ -1,5 +1,6 @@
 from ..calculator import Calculator
 from ..calculator import Calculator2
+from ..calculator import Calculator3
 
 
 def test_add():
@@ -48,3 +49,11 @@ def test_subtract2():
     assert Calculator2.subtract(0, 2.0) == -2.0
     assert Calculator2.subtract(2.0, 0.0) == 2.0
     assert Calculator2.subtract(-4, 2.0) == -6.0
+
+
+def test_add3():
+    assert Calculator3.add(1, 2) == 3.0
+    assert Calculator3.add(1.0, 2.0) == 3.0
+    assert Calculator3.add(0, 2.0) == 2.0
+    assert Calculator3.add(2.0, 0) == 2.0
+    assert Calculator3.add(-4, 2.0) == -2.0
