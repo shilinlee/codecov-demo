@@ -11,8 +11,6 @@ jobs:
         working-directory: ./api
     steps:
     - uses: actions/checkout@v1
-    - name: Go pull request message linter
-      uses: masahiro331/go-commitlinter@0.1.2
     - uses: actions/setup-python@v2
       with:
         python-version: '3.10'
